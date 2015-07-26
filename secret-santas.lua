@@ -61,6 +61,7 @@ function find_match(entries,matches,i)
 	eval = find_match(entries,matches,i+1)
 	if eval == "impossible" then
 		table.remove(matches)
+		n = n - 1
 		goto redo
 	else
 		return eval
